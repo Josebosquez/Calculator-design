@@ -4,11 +4,11 @@ In this assignment, we'll take the calculator that we built in the last assignme
 Solution GIF
 https://i.imgur.com/YpdPMem.mp4
 
-Steps
+<!-- Steps
 Starting with the HTML / CSS you wrote, create an main.js file to hold your Javascript
 Import your main.js into your index.html using a script tag
 Wire up the calculator!
-Expected functionality
+Expected functionality -->
 The calculator can display at most two numbers and one operation on the screen at any time i.e.: 2+3
 If the equal button is pressed, the calculator will calculate the result of the expression and display on the screen
 If the expression is incomplete (i.e.: no operation has been entered), nothing should happen
