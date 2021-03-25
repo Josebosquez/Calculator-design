@@ -1,65 +1,58 @@
+let firstNumber = [];
+let operation = [];
+let secondNumber = [];
+let screen = 0;
+
 // TODO: write query selectors and add event listeners to the calculator's buttons
 const keyOperators = document.querySelectorAll(".operator");
 const keyNumbers = document.querySelectorAll(".num");
 const clear = document.querySelector("#clear");
 const screenBox = document.querySelector("#screen");
 const equalSign = document.querySelector("#equalSign");
-// grab the Num from that target.
-
-let firstNumber = '';
-let operation = '';
-let secondNumber = '';
-let screen = 0;
+const decimal = document.querySelector("#period")
 
 
 // Calculates the result of the current expression if it is valid, then displays the result on the screen
 sum = 
 function calcResult() {
     // TODO
-    sum = firstNumber; operation; secondNumber
+    if (operator.length !==0){
+        
+    }
 }
-// const equals = document.querySelector(".equalSign");
-//     equals.addEventListener("click", calcResult )
-//     console.log("your great")
 
 // Handles when an operation button is pressed (+, -, /, *)
-
-let operationVariable = "";
-function operationPressed(op) {
+for (value of operator){
+    operator.addEventListener("click", function{})
 }
 
-// Handles when a number button is pressed
 
-    // TODO
+// Handles when a number button is pressed
     for (const element of keyOperators){
         element.addEventListener("click", function (){
-            console.log(element.innerText)
         });
     } 
 
-    for (const value of keyNumbers){
-        value.addEventListener('click', function (){
-            firstNumber += value.innerText;
-            screen += firstNumber;
-            console.log(value.innerText)
-        });
-    } 
+// create a function for numbers being Pressed
+function numKeysPress (event){
+    if (operator.length === 0){
+        firstNumber.push(event.target.innerText)
+    } else {
+        firstNumber.push(event.target.innerText)
+        // this isnt working. why?
+    } updateScreen
+}
 
-    equalSign.addEventListener("click", function (){
-        screen = firstNumber; operation; secondNumber;
-    });
-
-    
-
+//create a function for my equal sign being pressed.
+    equalSign.addEventListener("click", calcResult);
 
 // Clears the screen
 function clearScreen() {
     // TODO
     clear.addEventListener("click", function(){
-        firstNumber = "";
-        secondNumber = "";
-        operation = "";
-        screen = 0;
+        firstNumber.splice(0);
+        secondNumber.splice(0);
+        operation.splice(0);
     });
 }
 
